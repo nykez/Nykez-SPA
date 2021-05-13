@@ -1,0 +1,27 @@
+img.circle {
+    position: 
+    width 128px;
+    height: 128px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+a i.logo {
+    color: #4E5D94;
+}
+
+a i:hover:before {
+    color:white;
+}
+
+h1 {
+    font-family: "Poppins";
+    font-size: bold;
+    color: white;
+}
+
+h2 {
+    font-family: "Poppins";
+    color: white; 
+    font-size: normal;
+}

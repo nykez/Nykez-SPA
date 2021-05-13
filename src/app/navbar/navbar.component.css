@@ -1,0 +1,14 @@
+.navbar {
+    background: none;
+}
+
+li a {
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: white;
+}
+
+li a:hover {
+    color: rgb(128, 128, 128);
+}
