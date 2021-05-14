@@ -1,0 +1,22 @@
+
+.box {
+    color: rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
+    overflow: hidden;
+    min-width: inherit;
+    height: 10rem;
+    border-radius: 5px;
+    border-color: rgb(25, 25, 25);
+}
+
+.box img {
+    position: relative;
+    max-width: 25rem;
+    min-width: 25rem;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    filter:brightness(2);
+    mask-image: linear-gradient(to left, transparent 0%, black 30%);
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, black 30%);
+}

@@ -65,7 +65,7 @@ h1.addon-title {
 
 .main-text:hover:before {
     opacity: 1;
-    filter:blur(2px)
+    filter:blur(2px);
 }
 
 .main-text .info {

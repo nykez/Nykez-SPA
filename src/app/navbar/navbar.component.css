@@ -11,4 +11,5 @@ li a {
 
 li a:hover {
     color: rgb(128, 128, 128);
+    transition: 0.4s all;
 }
