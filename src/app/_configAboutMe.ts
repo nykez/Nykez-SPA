@@ -1,6 +1,6 @@
 import { Person } from './_models/Person';
 
-export let person: Person = {
+let person: Person = {
     name: "Jordan (Nykez)",
     
     socialLinks: [
