@@ -14,10 +14,12 @@ img.circle:hover{
 
 a i.logo {
     color: #4E5D94;
+    transition: 0.5s all;
 }
 
-a i:hover:before {
+a i:hover {
     color:white;
+    transition: 0.5s all;
 }
 
 h1 {
