@@ -1,7 +1,7 @@
 <main>
   <div class="px-4 py-5 my-5 text-center">
-    <img class="circle d-block mx-auto mb-4" src="/assets/missing.jpg" alt="avatar">
-    <h1 class="display-5 fw-bold animate__animated animate__fadeInDown">Jordan (Nykez)</h1>
+    <img class="circle d-block mx-auto mb-4" src="{{person.avatarUrl}}" alt="avatar">
+    <h1 class="display-5 fw-bold animate__animated animate__fadeInDown">{{person.name}}</h1>
 
     <h2 [@valueChanged]="currentTitle" class="display-10 fw-light mb-4 animate__animated animate__fadeInUp">{{currentTitle}}</h2>
 
@@ -9,17 +9,8 @@
       <!-- <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p> -->
       <div class="d-grid gap-4 d-sm-flex justify-content-sm-center animate__animated animate__bounceInLeft">
 
-        <a href="https://github.com/nykez" target="_blank" >
-          <i class="fab fa-github-square fa-2x logo animate__animated animate__bounceInLeft"></i>
-        </a>
-        <a href="https://steamcommunity.com/id/jordanlol633" target="_blank" >
-          <i class="fab fa-steam-square fa-2x logo animate__animated animate__bounceInLeft"></i>
-        </a>
-        <a href="https://discord.gg/jg96mKk" target="_blank">
-        <i class="fab fa-discord fa-2x logo animate__animated animate__bounceInLeft"></i>
-        </a>
-        <a href="https://www.gmodstore.com/users/76561198011844757" target="_blank" >
-          <i class="fas fa-share-alt-square fa-2x logo animate__animated animate__bounceInLeft"></i>
+        <a href="{{link.url}}" target="_blank" *ngFor="let link of person.socialLinks">
+          <i class="{{link.style}}"></i>
         </a>
 
       </div>

@@ -1,6 +1,8 @@
+import { Person } from './../../_models/Person';
 import { transition, trigger, animate, style, keyframes } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { interval, Observable } from 'rxjs';
+import person from '../../_configAboutMe';
 
 @Component({
   selector: 'app-about-me-hero',
@@ -22,22 +24,10 @@ import { interval, Observable } from 'rxjs';
   ]
 })
 export class AboutMeHeroComponent implements OnInit {
-  words: string[] =
-  [
-    "Software Engineer",
-    "a human being",
-    "Avid Programmer",
-    "a gamer",
-    "gmodstore curator",
-    "gmodstore creator",
-    "workshop creator",
-    "lua programmer",
-    "csharp developer",
-  ]
-
-  currentTitle: string = "Software Engineer"
-
+  public currentTitle: string = "Software Engineer"
   private myTimer: any;
+
+  public person: Person = person
 
   constructor() { 
 
@@ -48,7 +38,7 @@ export class AboutMeHeroComponent implements OnInit {
   }
 
   getRandomValue(): string {
-    return this.words[Math.floor(Math.random() * this.words.length)];
+    return this.person.titles[Math.floor(Math.random() * this.person.titles.length)];
   }
 
   startTime(): void {
@@ -59,16 +49,16 @@ export class AboutMeHeroComponent implements OnInit {
 
   setNewTitle(): void
   {
+    let randomValue = this.getRandomValue();
 
-    let randomValue = this.words[Math.floor(Math.random() * this.words.length)];
     if (randomValue === this.currentTitle) {
       clearInterval(this.myTimer);
       this.setNewTitle();
       this.startTime();
+    } else {
+      this.currentTitle =  randomValue;
     }
-    else{
-      this.currentTitle =  this.words[Math.floor(Math.random() * this.words.length)];
-    }
+
   }
   
 

@@ -1,4 +1,4 @@
-import { workshopAddons } from './../../workshopaddons';
+import { workshopAddons } from './../../_configWorkshopAddons';
 import { Component, OnInit } from '@angular/core';
 import { GmodstoreUser } from '../../_models/GmodstoreUser';
 import { GmodstoreUserAddon } from '../../_models/GmodstoreUserAddon';
