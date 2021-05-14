@@ -1,9 +1,15 @@
 img.circle {
-    position: 
-    width 128px;
+    width: 128px;
     height: 128px;
     overflow: hidden;
     border-radius: 50%;
+    transition: ease-in-out 0.3s;
+}
+
+img.circle:hover{
+    width: 135px;
+    height: 135px;
+    transition: ease-in-out 0.3s;
 }
 
 a i.logo {
