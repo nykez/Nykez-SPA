@@ -1,10 +1,25 @@
+import { transition, trigger, animate, style, keyframes } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { interval, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-about-me-hero',
   templateUrl: './about-me-hero.component.html',
-  styleUrls: ['./about-me-hero.component.css']
+  styleUrls: ['./about-me-hero.component.css'],
+  animations: [
+    trigger(
+      'valueChanged',
+      [
+          transition('void => *', []),
+          transition('* => void', []),
+          transition('* => *', [
+              animate(1000, keyframes([
+                  style ({ opacity: 0.0, offset: 0.0 }),
+                  style ({ opacity: 1.0, offset: 1.0 }),
+              ])),
+          ]),
+      ]),
+  ]
 })
 export class AboutMeHeroComponent implements OnInit {
   words: string[] =

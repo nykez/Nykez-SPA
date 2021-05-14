@@ -12,6 +12,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ApiGmsConnectorService } from './_services/apiGmsConnector.service';
 import { AddonsListComponent } from './addons/addons-list/addons-list.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [	
     AppComponent,
@@ -25,6 +27,7 @@ import { AddonsListComponent } from './addons/addons-list/addons-list.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     ApiGmsConnectorService,
