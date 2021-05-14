@@ -15,7 +15,18 @@
             </div>
             <h2>{{addon.name}}</h2>
             <p>{{ addon.shortDescription }}
-
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 mb-2 animate__animated animate__fadeInDown" *ngFor= "let workshop of workshopsAddon">
+        <div class="card">
+          <div class="img1"><img src={{workshop.image}} alt="image"></div>
+          <div class="main-text">
+            <div class="info">
+              <a class="btn btn-primary" href={{workshop.url}} target="_blank">Learn More</a>
+            </div>
+            <h2>{{ workshop.name }}</h2>
+            <p>{{ workshop.description }}
           </div>
         </div>
       </div>
