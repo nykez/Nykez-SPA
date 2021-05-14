@@ -16,6 +16,8 @@ export class AboutMeHeroComponent implements OnInit {
     "gmodstore curator",
     "gmodstore creator",
     "workshop creator",
+    "lua programmer",
+    "csharp developer",
   ]
 
   currentTitle: string = "Software Engineer"
