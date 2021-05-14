@@ -1,0 +1,21 @@
+
+<div class="text-center">
+  <h1 class="animate__animated animate__fadeInDown animate__delay-1s">My Addons</h1>
+</div>
+
+<div class="addon-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 mb-2 animate__animated animate__fadeInDown" *ngFor= "let addon of addons">
+        <div class="card">
+          <div class="img1"><img src={{addon.images.bigspot}} alt="image"></div>
+          <div class="main-text">
+            <!-- <p class="date-text">{{addon.createdAt}}</p> -->
+            <h2>{{addon.name}}</h2>
+            <p>{{ addon.shortDescription }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

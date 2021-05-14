@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ApiGmsConnectorService } from './_services/apiGmsConnector.service';
+import { AddonsListComponent } from './addons/addons-list/addons-list.component';
 
 @NgModule({
   declarations: [	
@@ -16,14 +18,17 @@ import { NavbarComponent } from './navbar/navbar.component';
     NavbarComponent,
     AboutMeHeroComponent,
     ProjectsComponent,
-    BlogHomeComponent
+    BlogHomeComponent,
+    AddonsListComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    ApiGmsConnectorService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
