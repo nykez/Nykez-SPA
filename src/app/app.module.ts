@@ -11,8 +11,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ApiGmsConnectorService } from './_services/apiGmsConnector.service';
 import { AddonsListComponent } from './addons/addons-list/addons-list.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TimeagoModule } from 'ngx-timeago';
 
 @NgModule({
   declarations: [		
@@ -28,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    TimeagoModule.forRoot()
   ],
   providers: [
     ApiGmsConnectorService,
