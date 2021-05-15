@@ -44,7 +44,7 @@ export class AboutMeHeroComponent implements OnInit {
   startTime(): void {
     this.myTimer = setInterval(() => {
       this.setNewTitle();
-    }, 5000);
+    }, 3000);
   }
 
   setNewTitle(): void
