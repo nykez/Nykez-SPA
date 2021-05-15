@@ -23,15 +23,15 @@
     float: left;
     max-width: 20vw;
     min-width: 20vw;
-    height: inherit;
-    min-height: inherit;
     max-height: 230px;
     margin-right: 0;
     padding: 0;
-    mask-image: linear-gradient(to left, transparent 0%, black 30%);
-    -webkit-mask-image: linear-gradient(to left, transparent 0%, black 30%);
+    /* mask-image: linear-gradient(to left, transparent 0%, black 20%); */
+    -webkit-mask-image: linear-gradient(to left, transparent 0%, rgb(50, 50, 50) 15%);
     border-radius: 5px;
+    object-fit:fill;
 }
+
 
 .box img.brightness {
     filter:brightness(2);
