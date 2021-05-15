@@ -19,18 +19,25 @@
     transition: 0.3s all;
 }
 
+@media (max-width: 1080px)
+{
+    .box img {
+        display: none;
+    }
+}
+
 .box img {
     float: left;
-    max-width: 20vw;
-    min-width: 20vw;
+    max-width: 384px;
+    min-width: 384px;
     max-height: 230px;
-    margin-right: 0;
+    margin-right: 5px;
     padding: 0;
-    /* mask-image: linear-gradient(to left, transparent 0%, black 20%); */
+    mask-image: linear-gradient(to left, transparent 0%, black 20%);
     -webkit-mask-image: linear-gradient(to left, transparent 0%, rgb(50, 50, 50) 15%);
     border-radius: 5px;
-    object-fit:fill;
 }
+
 
 
 .box img.brightness {
@@ -48,6 +55,9 @@
     color: rgb(150, 150, 150);
     font-family: sans-serif ;
     cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 .multi_lines_text { 
