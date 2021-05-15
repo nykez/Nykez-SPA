@@ -6,6 +6,7 @@ img.circle {
     transition: ease-in-out 0.3s;
 }
 
+
 img.circle:hover{
     width: 135px;
     height: 135px;
