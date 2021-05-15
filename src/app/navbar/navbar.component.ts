@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   collapsed = true;
 
+  private urlToOpen: string = "https://github.com/nykez/";
+
   constructor() { }
 
   ngOnInit() {
@@ -15,5 +17,15 @@ export class NavbarComponent implements OnInit {
 
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;
+  }
+
+  onNavigate(){
+    let url: string = '';
+    if (!/^http[s]?:\/\//.test(this.urlToOpen)) {
+        url += 'http://';
+    }
+
+    url += this.urlToOpen;
+    window.open(url, '_blank');
   }
 }

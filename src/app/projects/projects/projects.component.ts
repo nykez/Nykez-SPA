@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import projects from '../../_configProjects';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  projects: any = projects.projects;
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.projects);
   }
 
 }
