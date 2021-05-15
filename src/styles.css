@@ -15,10 +15,12 @@ h1 {
     font-family: "Poppins";
     font-size: bold;
     color: white;
+    cursor: pointer !important;
 }
 
 h2 {
     font-family: "Poppins";
     color: white; 
     font-size: normal;
+    cursor: pointer !important;
 }

@@ -127,6 +127,13 @@ h1.addon-title {
     text-align: center;
     border: 1px solid rgb(30, 30, 30);
     transform: translateY(20px);
+    transition: 0.3s all;
+}
+
+.text-bubble p:hover {
+    transition: 0.3s all;
+    background-color: rgba(28, 28, 28, 1) !important;
+    cursor: pointer;
 }
 
 .main-text p {
