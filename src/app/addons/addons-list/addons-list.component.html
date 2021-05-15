@@ -12,6 +12,11 @@
           <div class="main-text">
             <div class="info">
               <a class="btn btn-primary" href={{addon.route}} target="_blank">Learn More</a>
+              <div class="row">
+                <div class="col-12 text-bubble mt-1">
+                  <p> 3 years ago - {{addon.ratingAvg | number: '1.'}}/5 stars</p>
+                </div>
+              </div>
             </div>
             <h2>{{ addon.name }}</h2>
             <p>{{ addon.shortDescription }}

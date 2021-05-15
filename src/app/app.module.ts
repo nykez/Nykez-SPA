@@ -15,13 +15,13 @@ import { AddonsListComponent } from './addons/addons-list/addons-list.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     NavbarComponent,
     AboutMeHeroComponent,
     ProjectsComponent,
     BlogHomeComponent,
-    AddonsListComponent
+    AddonsListComponent,
    ],
   imports: [
     BrowserModule,

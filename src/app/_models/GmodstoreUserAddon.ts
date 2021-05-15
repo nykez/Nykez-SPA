@@ -10,5 +10,6 @@ export interface GmodstoreUserAddon {
     slug: string,
     route: string,
     created_at: Date,
-    updated_at: Date
+    updated_at: Date,
+    ratingAvg: number
 }
