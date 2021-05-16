@@ -17,6 +17,7 @@ import person from '../../_configAboutMe';
           transition('* => *', [
               animate(1000, keyframes([
                   style ({ opacity: 0.0, offset: 0.0 }),
+                  style ({ opacity: 0.5, offset: 0.5 }),
                   style ({ opacity: 1.0, offset: 1.0 }),
               ])),
           ]),
@@ -42,6 +43,7 @@ export class AboutMeHeroComponent implements OnInit {
   }
 
   startTime(): void {
+    clearInterval(this.myTimer);
     this.myTimer = setInterval(() => {
       this.setNewTitle();
     }, 3000);
@@ -51,14 +53,13 @@ export class AboutMeHeroComponent implements OnInit {
   {
     let randomValue = this.getRandomValue();
 
-    if (randomValue === this.currentTitle) {
-      clearInterval(this.myTimer);
+    if (randomValue == this.currentTitle) {
       this.setNewTitle();
-      this.startTime();
-    } else {
-      this.currentTitle =  randomValue;
     }
-
+    else{
+      this.currentTitle = randomValue;
+      this.startTime();
+    }
   }
   
 
