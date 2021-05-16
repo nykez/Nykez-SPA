@@ -44,7 +44,7 @@ h2 {
     color: rgba(200, 200, 200);
     background: rgba(30, 30, 30, 0.5);
     transition: 0.5s all;
-    cursor: pointer;
+    cursor: default;
     text-align: center;
 }
 

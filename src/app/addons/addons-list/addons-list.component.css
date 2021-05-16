@@ -133,7 +133,7 @@ h1.addon-title {
 .text-bubble p:hover {
     transition: 0.3s all;
     background-color: rgba(28, 28, 28, 1) !important;
-    cursor: pointer;
+    cursor: default;
 }
 
 .main-text p {
