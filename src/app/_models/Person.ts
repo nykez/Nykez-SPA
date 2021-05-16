@@ -3,4 +3,5 @@ export interface Person {
     socialLinks: any [];
     titles: string [];
     avatarUrl: string,
+    aboutMe: string
 }
