@@ -1,18 +1,18 @@
 
 const projects: any = [
-    {
-        name: "Clayton Tech",
-        tags: [
-            {name: "software engineer"},
-            {name: "software development"},
-            {name: "2020-current"},
-            {name: "berkshire group"}
-        ],
-        description: `Clayton is a vertically integrated Berkshire Hathaway company that builds, sells, finances and insures manufactured and modular homes, as well as commercial and educational building
-        Clayton Tech (Information Technology) and Core Business Function team members help support every aspect of the business. With more than 600 team members, our purpose is to support all our businesses in Opening doors to a better life, one home at a time®`,
-        image: "/assets/berkshire.png",
+//     {
+//         name: "Clayton Tech",
+//         tags: [
+//             {name: "software engineer"},
+//             {name: "software development"},
+//             {name: "2020-current"},
+//             {name: "berkshire group"}
+//         ],
+//         description: `Clayton is a vertically integrated Berkshire Hathaway company that builds, sells, finances and insures manufactured and modular homes, as well as commercial and educational building
+//         Clayton Tech (Information Technology) and Core Business Function team members help support every aspect of the business. With more than 600 team members, our purpose is to support all our businesses in Opening doors to a better life, one home at a time®`,
+//         image: "/assets/berkshire.png",
         
-    },
+//     },
     {
         name: "Monolith Roleplay",
         tags: [
