@@ -25,7 +25,6 @@ export class AddonsListComponent implements OnInit {
 
   loadAddons() {
     this.apiConnector.getMyAddons().subscribe( (res: GmodstoreUserAddon[]) => {
-        console.log(res);
       this.addons = res.filter(function(addon) {
         return addon.active;
       });
