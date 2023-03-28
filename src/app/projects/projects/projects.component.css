@@ -11,6 +11,7 @@
     border-color: rgb(25, 25, 25);
     transition: 0.3s all;
     overflow: hidden;
+    min-height: 230px;
     max-height: 230px;
 }
 
@@ -23,6 +24,10 @@
 {
     .box img {
         display: none;
+    }
+    .box {
+        overflow: scroll;
+        max-height: 300px;
     }
 }
 

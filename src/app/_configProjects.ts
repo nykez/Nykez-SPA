@@ -8,8 +8,7 @@ const projects: any = [
             {name: "2020-current"},
             {name: "berkshire group"}
         ],
-        description: `Clayton is a vertically integrated Berkshire Hathaway company that builds, sells, finances and insures manufactured and modular homes, as well as commercial and educational building
-        Clayton Tech (Information Technology) and Core Business Function team members help support every aspect of the business. With more than 600 team members, our purpose is to support all our businesses in Opening doors to a better life, one home at a time®`,
+        description: `Clayton is a vertically integrated Berkshire Hathaway company that builds, sells, finances and insures manufactured and modular homes, as well as commercial and educational building Clayton Tech (Information Technology) and Core Business Function team members help support every aspect of the business. With more than 600 team members, our purpose is to support all our businesses in Opening doors to a better life, one home at a time®`,
         image: "/assets/berkshire.png",
         
     },
@@ -32,7 +31,6 @@ const projects: any = [
             {name: "site curator"},
             {name: "garry's mod"},
             {name: "2016-2021"},
-            {name: "2018-2021"},
             {name: "everyday AS"}
         ],
         description: "GmodStore was formerly known as ScriptFodder and daily operations are being ran by Everyday AS. We have been around since CoderHire's demise back in 2014. Since then we have processed around $3,750,000 in payments for our content creators, and we hope to have several successful years ahead of us! ",
