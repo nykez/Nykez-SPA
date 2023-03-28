@@ -14,14 +14,13 @@ let person: Person = {
 
     titles: [
         "Software Engineer",
-        "a human being",
+        "human being",
         "Avid Programmer",
         "a gamer",
-        "gmodstore curator",
         "gmodstore creator",
         "workshop creator",
         "lua programmer",
-        "csharp developer",
+        "c# developer",
     ],
 
     avatarUrl: "/assets/missing.jpg",
