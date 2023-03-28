@@ -19,16 +19,20 @@ export class AddonsListComponent implements OnInit {
 
   constructor(private apiConnector: ApiGmsConnectorService, private route: ActivatedRoute) { }
 
+  isLoading = false;
   ngOnInit() {
+    this.isLoading = true;
     this.loadAddons();
   }
 
   loadAddons() {
     this.apiConnector.getMyAddons().subscribe( (res: GmodstoreUserAddon[]) => {
+        this.isLoading = false;
       this.addons = res.filter(function(addon) {
         return addon.active;
       });
     }, error => {
+    this.isLoading = false;
       console.log(error);
       alert("unable to load gmodstore addons");
     })
