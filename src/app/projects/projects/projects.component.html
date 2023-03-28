@@ -7,13 +7,14 @@
         <h1 class="text-center title">{{project.name}}</h1>
         <!-- tags/badges -->
         <div class="row">
-          <div class="col-12">
-            <div class="d-flex flex-wrap justify-content-center mt-2 mb-1 mx-auto">
+          <div class="col-12 overflow-auto">
+            <div class="d-flex flex-wrap gap-1 justify-content-center mt-1 mb-1">
               <span class="badge bg-secondary mx-1 badge-hover" *ngFor="let tag of project.tags">{{tag.name}}</span>
             </div>
+            <p class="multi_lines_text">{{project.description}}</p>
+
           </div>
         </div>
-        <p class="multi_lines_text" [innerHtml]="project.description"></p>
       </div>
     </div>
   </div>
