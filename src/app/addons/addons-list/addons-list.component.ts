@@ -23,18 +23,12 @@ export class AddonsListComponent implements OnInit {
     this.loadAddons();
   }
 
-  loadMe() {
-    this.apiConnector.getMe().subscribe( (res: GmodstoreUser) => {
-      this.user = res;
-    }, error => {
-      console.log(error);
-      alert("unable to load gmodstore addons");
-    });
-  }
-
   loadAddons() {
     this.apiConnector.getMyAddons().subscribe( (res: GmodstoreUserAddon[]) => {
-      this.addons = res;
+        console.log(res);
+      this.addons = res.filter(function(addon) {
+        return addon.active;
+      });
     }, error => {
       console.log(error);
       alert("unable to load gmodstore addons");

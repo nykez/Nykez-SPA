@@ -1,15 +1,14 @@
 
 export interface GmodstoreUserAddon {
-    id: any,
+    id: string,
+    teamId: string,
     active: boolean,
     name: string,
     short_description: string,
     description: string,
-    price: [],
     images: [],
     slug: string,
+    createdAt: Date,
+    updatedAt: Date,
     route: string,
-    created_at: Date,
-    updated_at: Date,
-    ratingAvg: number
 }

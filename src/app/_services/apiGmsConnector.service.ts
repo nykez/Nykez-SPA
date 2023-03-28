@@ -12,11 +12,11 @@ export class ApiGmsConnectorService {
     constructor(private http: HttpClient) { }
 
     getMe() {
-        return this.http.get<GmodstoreUser>(this.baseUrl + "gmodstore/@me");
+        return this.http.get<GmodstoreUser>(this.baseUrl + "gmodstore/me");
     }
 
     getMyAddons() {
-        return this.http.get<GmodstoreUserAddon[]>(this.baseUrl + "gmodstore/@me/addons");
+        return this.http.get<GmodstoreUserAddon[]>(this.baseUrl + "gmodstore/me");
     }
 
 }
