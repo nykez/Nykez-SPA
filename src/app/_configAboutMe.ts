@@ -7,7 +7,9 @@ let person: Person = {
         { style: "fab fa-github-square fa-2x logo animate__animated animate__bounceInLeft", url: "https://github.com/nykez"},
         { style: "fab fa-steam-square fa-2x logo animate__animated animate__bounceInLeft", url: "https://steamcommunity.com/id/jordanlol633"},
         { style: "fab fa-discord fa-2x logo animate__animated animate__bounceInLeft", url: "https://discord.gg/jg96mKk"},
-        { style: "fas fa-share-alt-square fa-2x logo animate__animated animate__bounceInLeft", url: "https://www.gmodstore.com/users/76561198011844757"}
+        { style: "fas fa-share-alt-square fa-2x logo animate__animated animate__bounceInLeft", url: "https://www.gmodstore.com/users/76561198011844757"},
+        { style: "fab fa-youtube-square fa-2x logo animate__animated animate__bounceInLeft", url: "https://www.youtube.com/channel/UCx54Nx4xgoK4oTISLD5m0eg"}
+
     ],
 
     titles: [
