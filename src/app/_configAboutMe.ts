@@ -19,7 +19,7 @@ let person: Person = {
         "a gamer",
         "gmodstore creator",
         "workshop creator",
-        "lua programmer",
+        "lua developer",
         "c# developer",
     ],
 
