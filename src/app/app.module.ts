@@ -13,6 +13,7 @@ import { ApiGmsConnectorService } from './_services/apiGmsConnector.service';
 import { AddonsListComponent } from './addons/addons-list/addons-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TimeagoModule } from 'ngx-timeago';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [		
@@ -22,6 +23,7 @@ import { TimeagoModule } from 'ngx-timeago';
     ProjectsComponent,
     BlogHomeComponent,
     AddonsListComponent,
+    BannerComponent,
    ],
   imports: [
     BrowserModule,
