@@ -6,10 +6,20 @@ const projects: any = [
             {name: "software engineer"},
             {name: "software development"},
             {name: "2020-current"},
-            {name: "berkshire group"}
         ],
         description: `Clayton is a vertically integrated Berkshire Hathaway company that builds, sells, finances and insures manufactured and modular homes, as well as commercial and educational building Clayton Tech (Information Technology) and Core Business Function team members help support every aspect of the business. With more than 600 team members, our purpose is to support all our businesses in Opening doors to a better life, one home at a time®`,
         image: "/assets/berkshire.png",
+        
+    },
+    {
+        name: "Gmodlisting.com",
+        tags: [
+            {name: "web development"},
+            {name: "garry's mod"},
+            {name: "2023"},
+        ],
+        description: `At GmodListing, we are dedicated to revolutionizing the Garry's Mod gaming experience by providing a comprehensive server list that caters to both smaller and larger servers. Our mission is to create a platform that not only serves as a hub for server discovery but also empowers the community by allowing users to actively participate and vote for their favorite servers. `,
+        image: "/assets/gmodlisting.png",
         
     },
     {
