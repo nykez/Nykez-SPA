@@ -43,7 +43,7 @@ const projects: any = [
             {name: "2016-2021"},
             {name: "everyday AS"}
         ],
-        description: "GmodStore was formerly known as ScriptFodder and daily operations are being ran by Everyday AS. We have been around since CoderHire's demise back in 2014. Since then we have processed around $3,750,000 in payments for our content creators, and we hope to have several successful years ahead of us! ",
+        description: "Gmodstore was formerly known as ScriptFodder and daily operations are being ran by Everyday AS. We have been around since CoderHire's demise back in 2014. Since then we have processed around $3,750,000 in payments for our content creators, and we hope to have several successful years ahead of us! ",
         image: "/assets/gmodstore.png",
         noBrightness: true,
     }
